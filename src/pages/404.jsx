@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/router';
 //styles
 import styles from '../styles/pages/404.module.scss';
+//constants
+import { getHomePageUrl } from '../constants/AppUrls';
 //components
 import PageWrapper from '../components/shared/pageWrapper/PageWrapper';
 
 const NotFound = () => {
+	const router = useRouter();
+
+	useEffect(() => {
+		setTimeout(() => {
+			router.push(getHomePageUrl());
+		}, 3000);
+	}, []);
 	return (
 		<PageWrapper title="Not Found">
 			<div className={`container ${styles.notFound}`}>
