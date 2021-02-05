@@ -7,20 +7,20 @@ import { getAboutPageUrl, getHomePageUrl, getNinjasPageUrl } from '../../constan
 
 const AppHeader = () => {
 	return (
-		<header>
-			<nav>
-				<div className="log">
-					<h1>Ninja List</h1>
+		<header className={styles.header}>
+			<nav className={styles.nav}>
+				<div className={styles.logo}>Ninja List</div>
+				<div>
+					<Link href={getHomePageUrl()}>
+						<a>Home</a>
+					</Link>
+					<Link href={getAboutPageUrl()}>
+						<a>About</a>
+					</Link>
+					<Link href={getNinjasPageUrl()}>
+						<a>Ninja Listing</a>
+					</Link>
 				</div>
-				<Link href={getHomePageUrl()}>
-					<a>Home</a>
-				</Link>
-				<Link href={getAboutPageUrl()}>
-					<a>About</a>
-				</Link>
-				<Link href={getNinjasPageUrl()}>
-					<a>Ninja Listing</a>
-				</Link>
 			</nav>
 		</header>
 	);

@@ -1,1 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 @import "generic.scss";
+
+body {
+  background: #f2f2f2;
+  color: #333;
+  font-family: "Nunito", serif;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
