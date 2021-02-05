@@ -5,7 +5,7 @@ import PageWrapper from '../components/shared/pageWrapper/PageWrapper';
 const About = () => {
 	return (
 		<PageWrapper title="About">
-			<h1>about page</h1>
+			<h1 className="title">about page</h1>
 			<p>
 				Aenean massa. Sed lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
 				posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Proin viverra, ligula sit
