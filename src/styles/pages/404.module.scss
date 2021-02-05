@@ -1,0 +1,28 @@
+.notFound {
+  .fa {
+    font-size: 340px;
+    color: #F44336;
+  }
+
+  .title {
+    color: #F44336;
+    border-bottom: 5px solid #F44336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 501px;
+    margin: 0 auto;
+  }
+
+  .notFoundCode {
+    font-size: 150px;
+  }
+
+  .error {
+    font-weight: bold;
+  }
+
+  .paragraph {
+    font-size: 20px;
+  }
+}
