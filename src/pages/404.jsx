@@ -15,6 +15,7 @@ const NotFound = () => {
 			router.push(getHomePageUrl());
 		}, 3000);
 	}, []);
+
 	return (
 		<PageWrapper title="Not Found">
 			<div className={`container ${styles.notFound}`}>
