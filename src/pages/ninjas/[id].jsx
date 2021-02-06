@@ -5,8 +5,10 @@ import UsersService from '../../services/UsersService';
 
 const NinjaDetails = ({ ninja }) => (
 	<PageWrapper title="Ninja Details">
-		<div>ninja details</div>
 		<h3>{ninja.name}</h3>
+		<p>{ninja.email}</p>
+		<p>{ninja.website}</p>
+		<p>{ninja.address?.city}</p>
 	</PageWrapper>
 );
 
